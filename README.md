@@ -260,3 +260,5 @@ class Adminforgetpassword extends Mailable
 </body>
 
 </html>
+        Mail::to(Config('settings.other_email_from'))->send(new PrivateTourEnquiryMailToAdmin($data));
+
